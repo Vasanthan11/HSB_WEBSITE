@@ -1,0 +1,454 @@
+:root {
+    --primary-color: #EA6D27;
+    --secondary-color: #101A24;
+
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #F3F3F4;
+    --pattern-color: #FFEBE0;
+
+
+    --barlow-font: "Barlow", sans-serif;
+}
+
+* {
+    font-family: var(--barlow-font);
+}
+
+
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.mainHeading {
+
+    color: var(--primary-color);
+    font-weight: 600;
+
+}
+
+.subHeading {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+
+/* NAV STYLE STARTS HERE */
+
+
+
+.bookATable {
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px 0px;
+    transition: 0.5s;
+
+
+}
+
+.bookATable:hover {
+    transition: 0.5s;
+    box-shadow: 0.3px 0.3px 6px var(--primary-color);
+
+
+}
+
+.navbar-nav .nav-item {
+    margin-left: 26px;
+    font-family: var(--barlow-font);
+
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--primary-color) !important;
+}
+
+.nav-link:focus-visible {
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.nav-link {
+
+    transition: 0.5s;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+
+
+    color: var(--primary-color) !important;
+    /* font-weight: 600; */
+    transition: 0.5s;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+
+
+    box-shadow: none;
+}
+
+.menuIcon {
+    height: 4px;
+    width: 22px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    margin-bottom: 2px;
+    animation-name: menuIconAnim;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+
+@keyframes menuIconAnim {
+    0% {
+        width: 2px;
+    }
+
+    100% {
+        width: 22px;
+    }
+
+}
+
+
+.menuIcon2 {
+    animation-delay: 0.1s;
+
+}
+
+.menuIcon3 {
+    animation-delay: 0.3s;
+
+}
+
+
+
+/* NAV STYLE ENDS HERE */
+
+
+
+/* INTRO SECTION STYLE STARTS HERE */
+
+.introSection {
+    width: 100%;
+    height: fit-content;
+    background-image: url(./assests/images/introBg.png);
+    background-size: contain;
+    font-family: var(--barlow-font);
+}
+
+.highLigntIntroText {
+    color: var(--primary-color);
+}
+
+
+
+/* INTRO SECTION STYLE ENDS HERE */
+
+
+
+
+/* MENU SECTION STYLE STARTS HERE */
+
+.menuSection {
+
+    width: 100%;
+    height: fit-content;
+    background-image: url(./assests/images/Menus\ \(3\).png);
+    background-size: contain;
+    font-family: var(--barlow-font);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+.dishName {
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.menuCard {
+
+    background-color: var(--primary-bg-color);
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 0.1px 0.1px 2px var(--primary-color);
+    transition: 1s;
+
+
+}
+
+.menuCard:hover {
+    transform: translateY(-10px);
+    transition: 1s;
+    box-shadow: 0.5px 0.5px 8px var(--primary-color);
+}
+
+
+
+/* MENU SECTION STYLE ENDS HERE */
+
+/* TESTIMONIAL SECTION STARTS HERE */
+.testimonial {
+    width: 100%;
+    height: fit-content;
+    background-image: url(./assests/images/testimonialBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--barlow-font);
+}
+
+/* TESTIMONIAL SECTION END HERE */
+
+
+/* GRAB A SEAT SECTION STARTS HERE */
+
+.input-group-text {
+    background: none;
+    border-right: none !important;
+    border-color: var(--primary-color);
+}
+
+.form-control {
+    border-left: none !important;
+    border-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+.form-control:focus {
+    color: var(--secondary-color);
+    font-weight: 500;
+
+    border-color: var(--primary-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+
+iframe {
+    height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0.1px 0.1px 5px var(--primary-color);
+}
+
+
+
+/* GRAB A SEAT SECTION ENDS HERE */
+
+
+
+/* FOOTER STARTS HERE */
+
+.footerSlogan {
+    font-weight: 600;
+}
+
+.footerTitle {
+    font-weight: 600;
+}
+
+.footerBaseIcons {
+    color: var(--primary-color);
+
+}
+
+.footerSection li {
+    list-style-type: none;
+    margin-bottom: 16px;
+    transition: 1s;
+
+}
+
+.footerSection li:hover {
+
+    transform: translateX(5px);
+    transition: 1s;
+
+}
+
+
+/* FOOTER ENDS HERE */
+
+
+
+
+
+/* SCROLL ANIMATION */
+
+
+
+.introRight {
+    padding-top: 20px;
+    animation-name: introImgAnim;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+@keyframes introImgAnim {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateY(-25px);
+    }
+
+}
+
+
+
+@media only screen and (min-width: 991.999px) {
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0PX !important;
+
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: space-between !important;
+    }
+
+
+    .testimonial,
+    .menuSection,
+    .introSection,
+    .grabASeatSec,
+    .footerSection,
+    .footerBase {
+
+        padding: 50px;
+
+
+    }
+
+
+}
+
+@media only screen and (max-width: 991.999px) {
+
+    .navbar-nav .nav-item,
+    .bookBtn {
+        margin-left: 0px !important;
+        padding: 5px 15px;
+    }
+
+    .introSectionMainCont,
+    .menuSection {
+        /* padding-top: 50px; */
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .navbar-nav .nav-item {
+        margin-left: 0px !important;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+}
+
+/* MEDIA QUERIES STARTS HERE */
+@media only screen and (max-width: 576px) {
+
+
+    h1 {
+        font-size: 36px;
+
+
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .footerBase {
+        font-size: 11px;
+    }
+
+}
+
+/* MEDIA QUERIES ENDS HERE */
+
+
+
+/* SCROLL ANIMATION */
+
+.introSectionMainCont,
+
+.menuCardSection,
+.testimonialContainer,
+.mapSec,
+.formSec {
+    display: none;
+
+}
+
+.animate-right {
+    display: block;
+    animation-name: animateFromright;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.animate-left {
+    display: block;
+    animation-name: animateFromLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateFromright {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes animateFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
